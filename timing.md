@@ -1,45 +1,69 @@
 # Timing Script — AAPT 2026, 10-minute slot
 
-**Budget: 8:00 speaking + 2:00 Q&A.** Nine slides + 2 backup. If you hit slide 6 at 5:00 you're on pace.
+**Budget: 8:00 speaking + 2:00 Q&A.** Eleven slides + 3 backup. If you hit slide 6 at 5:00 you're on pace.
 
 | # | Slide | Target | Cumulative |
 |---|-------|--------|------------|
-| 1 | Title | 0:15 | 0:15 |
-| 2 | The Problem | 0:45 | 1:00 |
-| 3 | The Stack | 0:45 | 1:45 |
+| 1 | Title (+ strike) | 0:25 | 0:25 |
+| 2 | The Problem | 0:45 | 1:10 |
+| 3 | The Stack | 0:35 | 1:45 |
 | 4 | Codespaces | 1:05 | 2:40 |
 | 5 | Collaboration | 0:55 | 3:35 |
 | 6 | AI Feedback — How | 1:05 | **4:40** |
 | 7 | AI Feedback — What | 0:55 | 5:35 |
-| 8 | You Control It | 0:50 | 6:25 |
-| 9 | What Happened — With Caveats | 1:30 | 7:55 |
-| 10 | Where I'd Go Next | 0:05 | 8:00 |
+| 8 | `RUBRIC.md` | 0:25 | 6:00 |
+| 9 | `guidance.md` | 0:25 | 6:25 |
+| 10 | What Happened — the curve | 0:40 | 7:05 |
+| 11 | Reading The Curve | 0:50 | **7:55** |
+| 12 | Where I'd Go Next | 0:05 | 8:00 |
 
-Slide 9 now carries three beats (decay / split / revision window). It is the densest slide
-in the deck and it earns the time — but rehearse it against a clock, because if it runs long
-there is nothing left to give.
+The data is now split across two slides. **Slide 10 is the chart alone** — big enough to
+read from the back, no text competing with it. Land the 65% and the shape of the decay,
+then stop talking and let them look at it.
 
-**The Classroom note (slide 3) is new and costs ~10s.** The title in the program says
-"GitHub Classroom," so say it out loud before someone in the room does:
+**Slide 11 carries the three beats** (split / don't-know / revision window), all at full
+size with two reveals. It is the densest slide in the deck and it earns the time — but
+rehearse it against a clock, because if it runs long there is nothing left to give.
 
-> "The title says GitHub Classroom. That's being retired — so distribution now runs on a
-> small `gh` extension I wrote. Everything downstream is unchanged, which is rather the point."
+## The Classroom strike — deliver it on the title slide
 
-Deliver it in one breath while advancing; don't stop on it. If you're behind at slide 3,
-cut it entirely — it survives fine as an answer to a question, and the deck no longer
-claims Classroom anywhere except the title.
+The title slide now has ONE fragment: advancing strikes through "GitHub Classroom"
+in the title. That is the natural home for this point, because the struck title IS
+the visual — no slide-3 aside required.
+
+Read the title, click, then:
+
+> "...except that GitHub Classroom is being retired. So distribution now runs on a
+> small `gh` extension I wrote. Everything downstream — Codespaces, Quarto, the
+> feedback — never knew Classroom existed. Which is rather the point."
+
+**Budget: title slide 0:15 -> 0:25, slide 3 back to 0:35. Net zero.**
+
+**Remember the extra click.** The title slide needs one advance before you move on.
+Press through on autopilot and you skip the strike, and the line lands flat.
+
+**Done: the Classroom note on slide 3 is gone.** What remains there is a one-line
+pointer — `gh rba` · `UINDY-INSTRUCTORS/gh-rba` — so the tool has a visible home
+without restating the point. The word "Classroom" now appears exactly once in the
+whole deck: the title, struck through.
+
+If someone wants the tool name, it is on screen at slide 3 and again on the closing
+slide. Say it as an aside while the stack diagram is up — it costs nothing:
+
+> "...that first box used to be GitHub Classroom; now it's a `gh` extension called
+> `gh rba`. Everything to the right of it never noticed."
 
 ## Checkpoints
 
 - **2:40 leaving Codespaces.** If past 3:15, cut the callout-box example — say "structured template, renders to HTML and PDF" and move.
-- **4:40 leaving the How slide.** Protect this one. If behind, compress slide 8 to one sentence: "You write the rubric in Markdown, the AI applies it."
-- **Slide 9 gets the most time on purpose.** It's the only original data in the talk. If you're at 7:00 arriving, drop the decay detail but keep the 65% and the 15/13/15 split.
+- **4:40 leaving the How slide.** Protect this one. If behind, collapse slides 8-9 into one beat: "You write the rubric and the guidance in Markdown, the AI applies them." Advance through both without stopping.
+- **Slides 10-11 get the most time on purpose (1:30 together).** It's the only original data in the talk. If you arrive at slide 10 past 7:00, keep the chart and the 15/13/15 split, and cut the revision-window beat on 11 — it survives as an answer to a question.
 
 ## Register
 
 This is an experience report. You built the plane while flying it, and the talk says so
-twice on purpose — once on slide 2, once on slide 9. That framing is doing real work: it
-sets expectations so nobody arrives at slide 9 expecting a controlled study, and it makes
+twice on purpose — once on slide 2, once on slide 10. That framing is doing real work: it
+sets expectations so nobody arrives at the data slides expecting a controlled study, and it makes
 the numbers *interesting* rather than *contestable*. Don't apologize for it beyond those
 two mentions — stated once plainly, it reads as confidence, not hedging.
 
@@ -51,7 +75,7 @@ rigor the design can't back.
 
 **Slide 7** (the feedback screenshot) — the only moment the audience sees actual output. Beat of silence, then the "not 'good job'" line.
 
-**Slide 9** — land the 65% and the tail-off, then say plainly you don't know why and didn't ask. That's the most honest moment in the talk and it's what makes the rest credible.
+**Slides 10-11** — land the 65% on the chart, then on 11 say plainly you don't know why the curve fell and didn't ask. That's the most honest moment in the talk and it's what makes the rest credible.
 
 ## Numbers — say these consistently
 
@@ -59,7 +83,7 @@ Your submitted abstract says "in under minutes," the INAAPT deck said "under 15 
 
 > **"About 10–15 seconds of analysis; a minute or two wall-clock once the Action spins up."**
 
-Data on slide 9, from the GitHub API (2026-07-18) joined to Brightspace exports.
+Data on slides 10-11, from the GitHub API (2026-07-18) joined to Brightspace exports.
 Three Spring 2026 orgs: `202520-PHYS-280`, `202520-PHYS-230`, `202520-EENG-340`.
 
 - **43 students, 440 repos, 191 feedback requests**
@@ -143,10 +167,41 @@ not "it improved scores."
 
 **"Non-physics course?"** — Nothing is physics-specific; rubric and guidance are just Markdown.
 
-## Cold open (optional)
+## Cold open — VERIFIED, safe to tell
 
-Only if it's true of an actual student — don't invent it:
+Checked against commit and issue timestamps (`data/find_cold_open.py`), not
+reconstructed from memory. The sequence, in local time:
 
-> "Last term a student pushed a lab report at 11 PM, got feedback in about a minute, fixed two things, and pushed again before midnight. I hadn't looked at it yet. That's the whole talk — let me show you how it's wired."
+| when | what |
+|---|---|
+| Fri Feb 27, **11:11 PM** | student commits `index.qmd` — message: **"Finished"** |
+| **11:13 PM** | AI feedback issue posted — **+2.2 min** |
+| **11:22 PM** | student commits again — `index.qmd` +3/-3, three plots re-exported, message: **"finished2"** |
+| Mar 15, 2:11 AM | instructor renders and reads it — **16 days later** |
 
-Given 30% of requests land between 8pm and 4am, something close to this almost certainly happened. But check before you claim a specific one.
+> "Last term a student pushed a lab report at 11:11 at night, with the commit
+> message 'Finished.' Two minutes later the feedback came back. At 11:22 they
+> pushed again — three lines changed, plots re-exported, commit message
+> 'finished2.' I didn't look at that report for another sixteen days. That's the
+> whole talk — let me show you how it's wired."
+
+**Say "they."** No name, no pronoun guess; the room doesn't need either.
+
+**Do NOT say "fixed two things"** — the earlier draft claimed that and the diff
+doesn't support it. It is three changed lines plus three re-exported images.
+
+**Costs ~20s.** It replaces nothing, so if you use it, cut the Classroom note on
+slide 3 and be ready to compress slide 8.
+
+### If asked "was that typical, or your best example?"
+
+Aggregates over all feedback requests followed by a commit within 6 hours:
+
+- **62** requests were acted on within 6 hours
+- **22** of those were evening or overnight
+- **35** had turnaround of **<= 5 minutes**
+- **median turnaround: 3.9 minutes**
+
+Safe to say out loud: these need only commit and issue timestamps, both exact,
+with no join to grading records. That is *not* true of the pre-grade numbers in
+OPEN-QUESTIONS.md — do not quote those.

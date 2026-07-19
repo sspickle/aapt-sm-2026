@@ -1,6 +1,9 @@
 ---
-title: "GitHub Classroom as an Assignment Management Platform"
-subtitle: "Codespaces, Collaboration, and AI Feedback"
+title: "<span class='fragment strike'>GitHub Classroom</span> as an Assignment Management Platform"
+subtitle: |
+  Codespaces, Collaboration, and AI Feedback
+
+  <img src="qr.png" alt="QR code" style="width: 600px; height: auto; margin-top: 0.6em; border-radius: 8px;" />
 author: "Steve Spicklemire"
 institute: "University of Indianapolis"
 date: today
@@ -14,7 +17,6 @@ format:
     transition: slide
     background-transition: fade
     footer: "AAPT Summer Meeting 2026 | spicklemire@uindy.edu | UIndy"
-    logo: ""
     width: 1920
     height: 1080
     margin: 0.05
@@ -35,8 +37,7 @@ format:
 
 . . .
 
-**Fair warning:** I built this while teaching with it. What follows is one instructor's
-experience, not a controlled trial.
+**Note:** I built this plane while flying it! This was not a systematic study, but hopefully useful.
 
 ---
 
@@ -62,14 +63,19 @@ Students get their own repo from a template. Everything runs in a browser.
 
 . . .
 
-::: {style="font-size:0.72em; color:#555; margin-top:0.6em;"}
-I started on **GitHub Classroom**, which is being retired. Distribution now runs on a
-small `gh` CLI extension — one command per assignment. *Nothing downstream changed.*
+::: {style="color:#555; margin-top:0.6em; font-size:0.8em;"}
+Distribution is one command:
+
+<br>
+ `gh rba`
+ 
+ <br>
+ See [https://github.com/UINDY-INSTRUCTORS/gh-rba](https://github.com/UINDY-INSTRUCTORS/gh-rba)
 :::
 
 ---
 
-## Codespaces: No Install, No Excuses
+## Codespaces: No Install, Just Works
 
 ::: {.columns}
 ::: {.column width="52%"}
@@ -80,17 +86,21 @@ A pre-configured environment that runs **in the browser**.
 - Works on Chromebooks, iPads, lab machines
 - Defined by `.devcontainer/` in the template repo
 
-*(We started on LaTeX and switched to Typst mid-semester — markedly
+*(We changed from LaTeX rendering to Typst mid-semester — markedly
 more robust for student-generated documents.)*
 
-. . .
-
-**Update the container once — everyone gets the fix.**
+::: {style="margin-top:2em"}
+**Update the image once — everyone gets the fix.**
 
 No more "it doesn't work on my machine."
 :::
+
+
+
+
+:::
 ::: {.column width="48%"}
-Students write a structured `index.qmd`:
+Students edit a template structured quarto markdown file that becomes their report `index.qmd`:
 
 ```{.markdown}
 ## Abstract
@@ -103,7 +113,10 @@ an uncertainty estimate.
 :::
 ```
 
-One source file renders to **HTML and PDF**, reproducibly, every time.
+::: {style="margin-top:1.5em"}
+One source file renders to **HTML and PDF**.
+:::
+
 :::
 :::
 
@@ -180,7 +193,7 @@ Criterion-by-criterion keeps the feedback focused and fits the token budget.
 
 ## AI Feedback: What The Student Gets
 
-![](images/feedback.png){style="max-height:790px; width:auto; display:block; margin:0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.3); border-radius: 6px;"}
+![](images/feedback.png){style="max-height:840px; width:auto; display:block; margin:0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.3); border-radius: 6px;"}
 
 . . .
 
@@ -188,40 +201,38 @@ Not "good job" — *"your abstract lacks an uncertainty estimate."*
 
 ---
 
-## You Control What It Says
+## You Control What It Says — `RUBRIC.md`
 
-::: {.columns}
-::: {.column width="50%"}
-**`RUBRIC.md`** — your criteria, your weights
+Your criteria, your weights.
 
-![](images/rubric.png){style="max-height:620px; width:auto; display:block; margin:0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border-radius: 6px;"}
-:::
-::: {.column width="50%"}
-**`guidance.md`** — course context, common mistakes, tone
-
-![](images/guidance.png){style="max-height:620px; width:auto; display:block; margin:0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border-radius: 6px;"}
-:::
-:::
-
-. . .
-
-Write them in Markdown. The system converts them for you.
-
-**The AI applies *your* rubric — which also pulls students toward your actual criteria.**
+![](images/rubric-top.png){style="height:840px; width:auto; display:block; margin:0.2em auto 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border-radius: 6px;"}
 
 ---
 
-## What Happened — With Caveats {.smaller}
+## …And How To Say It — `guidance.md`
+
+Course context, common mistakes, tone.
+
+![](images/guidance-top.png){style="height:790px; width:auto; display:block; margin:0.2em auto 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border-radius: 6px;"}
+
+. . .
+
+**Both are Markdown. The AI applies *your* rubric — which also pulls students toward your actual criteria.**
+
+---
+
+## What Happened 
 
 I was building this while teaching with it. Rubrics changed, the PDF engine changed
-mid-semester, the trigger changed in April. **This is an experience report, not a study.**
+mid-semester, the trigger changed in April.
 
 One term, three courses — **43 students, 440 repos, 191 requests.**
 **Most students tried it** — **65% used it at least once.** What faded was how often
 they came back:
 
 ```{=html}
-<div style="display:flex; align-items:flex-end; justify-content:center; gap:2.5em; margin:0.5em 0 0.2em 0;">
+<div style="font-size:1.75em; margin:0.5em 0 0 0;">
+<div style="display:flex; align-items:flex-end; justify-content:center; gap:2.5em;">
   <div style="text-align:center;">
     <div style="background:#16a34a; width:3.2em; height:6.5em; border-radius:4px 4px 0 0;"></div>
     <div style="font-size:0.6em; margin-top:0.35em;"><b>0.61</b><br>Jan</div>
@@ -239,10 +250,13 @@ they came back:
     <div style="font-size:0.6em; margin-top:0.35em;"><b>0.22</b><br>Apr</div>
   </div>
 </div>
-<div style="text-align:center; font-size:0.6em; color:#666;">feedback requests per assignment repo released</div>
+<div style="text-align:center; font-size:0.5em; color:#666; margin-top:0.4em;">feedback requests per assignment repo released</div>
+</div>
 ```
 
-. . .
+---
+
+## What Happened — Reading The Curve
 
 Roughly the same number of assignments went out each month, so it isn't just that.
 And the split wasn't apathy: **15 never tried it, 13 tried it once or twice,
@@ -250,11 +264,15 @@ And the split wasn't apathy: **15 never tried it, 13 tried it once or twice,
 
 . . .
 
-Why it tailed off, I genuinely don't know — novelty, friction, or busier weeks late
-in the term. I didn't think to ask them, which in hindsight is the obvious thing I'd
-do differently.
+<br>
+
+Why it tailed off, I genuinely don't know.
+I didn't think to ask them, which in hindsight is the obvious thing I'll
+do differently next time.
 
 . . .
+
+<br>
 
 **One thing that did show up:** I offered an end-of-term revision window. Students used
 it at about the same rate regardless of feedback use — but **how much** revision they
@@ -263,26 +281,23 @@ needed differed. Of items that came back, students who'd never used feedback nee
 
 ---
 
-## Where I'd Go Next
+## Next steps
 
 ::: {.columns}
 ::: {.column width="50%"}
 **Lower the friction**
-<br>The trigger is now a menu item in the editor rather than a shell command.
-Shipped in April — no verdict yet.
+<br>The trigger is now a menu item in the editor rather than a shell command. This was added late in the semester, too late to make a difference.
 
 **Require one round, once**
-<br>Build a single feedback request into one early assignment. Ten minutes of
+<br>Build a single feedback request into one early assignment as a required part of the assignment. Ten minutes of
 student time; might reach the group that never opted in.
 :::
 ::: {.column width="50%"}
+
 **Ask them why**
 <br>Three questions at the end of term would have told me more than all of my
 log-digging did.
 
-**Point it at me instead**
-<br>Same engine run in batch — triage for *my* grading rather than a
-student-facing tool.
 :::
 :::
 
@@ -291,7 +306,15 @@ student-facing tool.
 **To try it:** GitHub Education account (free) → a course org → a template repo with
 `index.qmd` + `.devcontainer/` + `.github/feedback/`
 
-`UINDY-INSTRUCTORS/gh-rba` · `UINDY-INSTRUCTORS/ai-feedback-system` · `UINDY-INSTRUCTORS/batch_quarto_reports`
+`UINDY-INSTRUCTORS/gh-rba` · `UINDY-INSTRUCTORS/ai-feedback-system`
+
+. . .
+
+::: {style="background:#dcfce7; border-left:6px solid #16a34a; padding:0.45em 1em; margin:0.4em 0 0.3em 0; font-size:0.88em;"}
+**Want to build one?** I've proposed a hands-on workshop for the **Winter Meeting,
+New Orleans, January 2027** — write your own rubric and guidance files, set up the
+model, then push a report through the whole loop as a student would.
+:::
 
 **spicklemire@uindy.edu** · *Questions?*
 

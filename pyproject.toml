@@ -1,0 +1,14 @@
+[project]
+name = "aapt-sm-2026"
+version = "0.1.0"
+description = "Slides and usage analysis for the AAPT Summer Meeting 2026 talk on AI feedback for student lab reports"
+requires-python = ">=3.12"
+
+# Every analysis script here is standard library only. The one external piece
+# is extract_name_components, which lives in the (private) build_quarto_reports
+# repo; pre_grade_feedback.py imports it optionally and explains what to do if
+# it is absent. Nothing here needs to be installed.
+dependencies = []
+
+[tool.uv]
+package = false

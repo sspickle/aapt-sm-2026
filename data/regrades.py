@@ -26,7 +26,7 @@ for course, org in ORG.items():
         # student = leading token before the first course/proj marker
         m = re.match(r"^(.+?)-(?:ph\d+|proj|p\d|eeng|fp|final)", n, re.I)
         stu = m.group(1) if m else n.split("-")[0]
-        stu = re.sub(r"-\d{1,2}$", "", stu)            # AlejandroMR-24 -> AlejandroMR
+        stu = re.sub(r"-\d{1,2}$", "", stu)            # jsmith42-24 -> jsmith42
         stu = re.sub(r"\s*\(\d+\)$", "", stu).strip()
         regrade = bool(re.search(r"regrade", n, re.I))
         dm = re.search(r"(20\d{6})", n)
