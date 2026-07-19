@@ -298,8 +298,15 @@ student time; might reach the group that never opted in.
 <br>Three questions at the end of term would have told me more than all of my
 log-digging did.
 
+```{=html}
+<div style="display:flex; justify-content:flex-end; margin-top:0.1em; margin-bottom:0.2em;">
+  <img src="qr.png" alt="QR code" style="width:400px; height:auto; border-radius:6px;" />
+</div>
+```
+
 :::
 :::
+
 
 . . .
 
