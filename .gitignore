@@ -1,0 +1,29 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+*_files/
+*.html
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# macOS
+.DS_Store
+
+# Screen grabs
+slide*.png
+
+# ---------------------------------------------------------------------------
+# Student data — NEVER commit. These carry GitHub usernames, student emails,
+# and D2L IDs joined to grades: FERPA-protected education records.
+# The analysis scripts are kept; the data they consume and produce is not.
+# ---------------------------------------------------------------------------
+data/*.csv
+data/*.tsv
+data/grades/
+*.xlsx
