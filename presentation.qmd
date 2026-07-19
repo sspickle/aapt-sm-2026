@@ -3,7 +3,7 @@ title: "<span class='fragment strike'>GitHub Classroom</span> as an Assignment M
 subtitle: |
   Codespaces, Collaboration, and AI Feedback
 
-  <img src="qr.png" alt="QR code" style="width: 600px; height: auto; margin-top: 0.6em; border-radius: 8px;" />
+  <img src="qr.png" alt="QR code" style="width: 400px; height: auto; margin-top: 0.6em; border-radius: 8px;" />
 author: "Steve Spicklemire"
 institute: "University of Indianapolis"
 date: today
